@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+
+        function fatorial() {
+
+            var numero = Number(document.getElementById("num1").value);
+
+            var resultado = numero;
+
+
+            while (numero > 1) {
+                numero--;
+                resultado = resultado * numero;
+
+            }
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <p>
+        <input id="num1" type="number">
+    </p>
+    <button id="fatorial" class="destaque" onclick="fatorial()" >Fatorial!</button>
+    <h1 id="resultado"></h1>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<h1>Meus filmes favoritos</h1>
+
+<h1 class="border">
+<p id="demo1"> </p>
+  <p id="demo2"> </p>
+  <p id="demo3"> </p>
+</h1>
+<h1 class="border">
+  <p id="demo4"> </p>
+  <p id="demo5"> </p>
+  <p id="demo6"> </p>
+</h1>
+<h1 class="border">
+  <p id="demo7"> </p>
+  <p id="demo8"> </p>
+  <p id="demo9"> </p>
+</h1>
+
+  <script>
+    class Filme {
+      constructor(titulo, ano, genero) {
+        this.title = titulo;
+        this.year = ano;
+        this.gender = genero;
+      }
+    }
+    filme1 = new Filme("Lawrence of Arabia", "Ano: 1962", "Drama");
+    filme2 = new Filme("The Great Escape", "Ano: 1963", "Drama");
+    filme3 = new Filme("All Quiet on the Western Front", "Ano: 1979", "Guerra");
+    document.getElementById("demo1").innerHTML = filme1.title;
+    document.getElementById("demo2").innerHTML = filme1.year;
+    document.getElementById("demo3").innerHTML = filme1.gender;
+    document.getElementById("demo4").innerHTML = filme2.title;
+    document.getElementById("demo5").innerHTML = filme2.year;
+    document.getElementById("demo6").innerHTML = filme2.gender;
+    document.getElementById("demo7").innerHTML = filme3.title;
+    document.getElementById("demo8").innerHTML = filme3.year;
+    document.getElementById("demo9").innerHTML = filme3.gender;
+  </script>
+
+</body>
+
+</html>

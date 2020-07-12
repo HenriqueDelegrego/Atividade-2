@@ -1,0 +1,25 @@
+nav {
+    border: 2px gray solid;
+    background-color: rgb(54, 137, 165);
+  }
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav a {
+    color: white;
+  }
+  .menu ul {
+    display: none;
+  }
+  
+  .menu li:hover ul {
+    position: absolute;
+    display: block;
+    background-color: burlywood;
+    padding: 10px;
+    border: 2px red solid;
+  }

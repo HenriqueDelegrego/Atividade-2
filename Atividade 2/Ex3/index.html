@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var arrayDeNomes = [];
+        function adicionarNoArray() {
+            var input = document.getElementById("entrada");
+            arrayDeNomes.push(input.value);
+            input.value = "";
+
+        }
+
+        function mostrarconteudoArray() {
+             var i;
+             document.getElementById("resultado").innerHTML = ""; 
+            arrayDeNomes.forEach(function (valor, indice) {
+               // debugger;
+                var i = document.createElement("li");
+                    i.innerHTML = valor;
+
+                document.getElementById("resultado").appendChild(i);
+
+               // i = i + ("<br>" + valor + "");
+                // console.log(valor);
+                 
+             })
+
+             
+           /* var resultado = [];
+            for (k = 0; k < 3; k++) {
+                resultado = resultado + arrayDeNomes;
+
+            }
+            document.getElementById("resultado1").innerHTML = resultado[0];
+            document.getElementById("resultado2").innerHTML = resultado[1];
+            document.getElementById("resultado3").innerHTML = resultado[2];
+*/
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <input id="entrada">
+    <button onclick="adicionarNoArray()">adicionarNoArray</button>
+    <button onclick="mostrarconteudoArray()">Mostrar</button>
+    <h1 class="thick">Lista de nomes:</h1>
+    <br>
+    <ul id="resultado" class="destaque">
+       
+    </ul>
+
+
+
+    <script>
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

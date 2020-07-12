@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>Coloque os valores nos campos</h1>
+
+    <div class="flex">
+        <p>
+            <input id="num1" type="text" placeholder="Campo 1">
+        </p>
+
+        <p style="margin-left: 10px;">
+            <input id="num2" type="text" placeholder="Campo 2">
+        </p>
+
+        <p style="margin-left: 10px;">
+            <input id="num3" type="text" placeholder="Campo 3">
+        </p>
+        <button id="somar" onclick="somar()">Somar</button>
+
+    </div>
+    <h2 id="resultado"></h2>
+
+
+
+    <script>
+        function somar() {
+            var numero1 = Number(document.getElementById("num1").value);
+            var numero2 = Number(document.getElementById("num2").value);
+            var numero3 = Number(document.getElementById("num3").value);
+            var resultado = numero1 + numero2 + numero3;
+            document.getElementById("resultado").innerHTML = resultado;
+            if (resultado % 2 == 0) {
+                alert("O numero " + resultado + " é pár");
+            } else {
+                alert("O número " + resultado + " é impar");
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
